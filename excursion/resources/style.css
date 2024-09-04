@@ -1,43 +1,86 @@
-/* style.css */
-
-/* Reset some basic styles */
-* {
+/* General body styles */
+body {
+    background-color: black; /* Background color */
+    color: white;
+    font-family: Verdana, sans-serif; /* Font family */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    text-align: center; /* Align text to center */
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+/* Top-most header */
+header h1 {
+    font-size: 50px; /* 50px font size */
+    font-weight: normal; /* Normal font weight */
+    color: white; /* White text color */
+    text-align: center; /* Center text */
+    margin-top: 20px; /* Add some space above */
 }
 
-/* Styling the header */
-header {
-    background-color: #4CAF50;
-    padding: 20px;
-    text-align: center;
+/* Download link in the header */
+header a {
+    font-size: 16px; /* Font size for the link */
+    color: aquamarine; /* Aquamarine color */
+    text-decoration: none; /* Remove underline */
+}
+
+header a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Image styling for the phone */
+img.phone {
+    display: block;
+    margin: 0 auto; /* Center the image */
+    max-width: 100%; /* Ensure the image is responsive */
+}
+
+/* Sub-header below the phone image */
+h2 {
+    font-size: 42px; /* 42px font size */
+    font-weight: 300; /* 300 font weight */
     color: white;
+    margin: 20px 0;
 }
 
-/* Styling the navigation */
-nav h1 {
-    font-size: 2.5em;
+p {
+    font-size: 21px; /* 21px font size */
+    color: gray; /* Gray text color */
+    margin: 0 0 20px 0;
 }
 
-nav a {
+/* Image of the campsite */
+img.campsite {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* Ensure the image is responsive */
+}
+
+/* "Coming soon" text and icon */
+footer {
+    margin: 50px 0; /* Add space at the top and bottom */
+}
+
+footer h3 {
+    font-size: 42px;
+    color: white;
+    margin: 10px 0;
+}
+
+footer a {
+    font-size: 16px;
+    color: aquamarine; /* Aquamarine color */
     text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-    margin-top: 10px;
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid white;
-    border-radius: 5px;
 }
 
-/* Hover effect for the link */
-nav a:hover {
-    background-color: white;
-    color: #4CAF50;
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Text-align right for footer copyright */
+footer p {
+    font-size: 12px;
+    color: gray; /* Gray color for copyright text */
+    text-align: right; /* Align right */
+    margin-right: 20px; /* Add some margin to the right */
 }
